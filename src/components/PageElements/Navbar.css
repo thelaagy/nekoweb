@@ -1,0 +1,51 @@
+nav {
+    background: var(--gb-color1);
+    color: var(--gb-color4);
+    position: relative;
+    margin: 16px;
+    right: 0;
+    z-index: 5;
+}
+
+nav ul {
+    border: var(--gb-color3) 2px solid;
+    padding: 4px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 8px;
+    min-width: 128px;
+}
+
+nav ul li {
+    align-self: center;
+    
+}
+
+nav ul li a {
+    color: var(--gb-color3);
+    margin: 4px;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: wavy;
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        width: 100%;
+        position: absolute;
+        margin: 0;
+    }
+
+    nav ul{
+        flex-direction: row;
+        border-radius: 0;
+        border: none;
+        border-bottom: var(--gb-color3) dotted 2px;
+    }
+}

@@ -1,0 +1,40 @@
+
+:root {
+    --gb-color1: #dad3af;
+    --gb-color2: #d58863;
+    --gb-color3: #c23a73;
+    --gb-color4: #2c1e74;
+
+    /*--gb-color1:  white ;
+--gb-color2: #C0C0C0 ;
+--gb-color3: darkblue ;
+--gb-color4: black ;*/
+
+    --window-background: var(--gb-color2);
+    --window-border: var(--gb-color1);
+    --window-text: var(--gb-color4);
+    --window-title-color1: var(--gb-color3);
+    --window-title-color2: var(--gb-color3);
+    --window-title-text: var(--gb-color1);
+    --window-border-size: 1px;
+}
+
+
+* {
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+    .main{
+        flex-direction: column;
+    }
+}

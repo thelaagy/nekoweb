@@ -1,0 +1,84 @@
+
+
+
+
+
+
+.titlebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, var(--window-title-color1), var(--window-title-color2));
+    color: var(--window-title-text);
+    font-family: monospace;
+    font-weight: bold;
+
+    height: 18px;
+}
+
+.titlebar>.text {
+    order: 1;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-grow: 8;
+    line-height: 18px;
+}
+
+.titlebar>.text div {
+    height: 18px;
+    width: 18px;
+    margin-right: 2px;
+    align-self: flex-end;
+}
+
+.titlebar>.text img {
+    width: 100%;
+    height: 100%;
+
+    max-width: 1.5em;
+}
+
+.titlebar>.buttons {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+}
+
+.titlebar>.buttons button {
+    width: 16px;
+    height: 14px;
+    border-radius: 0;
+    margin-right: var(--window-border-size);
+    margin-left: 2px;
+    background-color: var(--window-background);
+    border-color: var(--window-border);
+    border-width: var(--window-border-size);
+    font-weight: bold;
+    box-shadow: var(--window-border-size) 0px black,
+        0px var(--window-border-size) black,
+        var(--window-border-size) var(--window-border-size) black;
+}
+
+.titlebar>.buttons button svg {
+    stroke-width: 1.5;
+    stroke: var(--window-text);
+}
+
+.titlebar>.buttons button svg#max {
+    display: none;
+}
+
+.titlebar>.buttons button svg#min {
+    display: inline;
+}
+
+.titlebar>.buttons button:active {
+    box-shadow: calc(var(--window-border-size) * -1) 0px black,
+        0px calc(var(--window-border-size) * -1) black,
+        calc(var(--window-border-size) * -1) calc(var(--window-border-size) * -1) black;
+    transform: translate(var(--window-border-size), var(--window-border-size));
+}

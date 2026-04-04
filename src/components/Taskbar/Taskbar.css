@@ -1,0 +1,87 @@
+.taskbar {
+    position: fixed;
+    display: block;
+    background: var(--window-background);
+    bottom: 0;
+    width: 100%;
+    border-top: var(--window-border) solid var(--window-border-size);
+}
+
+.taskbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    min-height: 24px;
+}
+
+
+.taskbar ul li {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    margin: 0 2px;
+}
+
+.taskbar ul li a {
+    display: flex;
+    align-items: center;
+    border: var(--window-border) var(--window-border-size) outset;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px;
+    margin: 1px;
+    color: var(--window-text);
+    font-family: monospace;
+    overflow: hidden;
+    box-shadow: var(--window-border-size) 0px black,
+        0px var(--window-border-size) black,
+        var(--window-border-size) var(--window-border-size) black;
+}
+
+.taskbar ul li a.winbtn {
+    width: 260px;
+}
+
+.taskbar span {
+    color: var(--window-text);
+}
+
+
+.taskbar ul li a:active {
+    /*box-shadow: calc(var(--window-border-size) * -1) 0px black,
+                0px calc(var(--window-border-size) * -1) black,
+                calc(var(--window-border-size) * -1) calc(var(--window-border-size) * -1) black;*/
+    border: var(--window-border-size) solid black;
+    box-shadow: none;
+    /*transform: translate(var(--window-border-size), var(--window-border-size));*/
+}
+
+.taskbar ul li img {
+
+    width: 12px;
+    height: 12px;
+    display: inline;
+    margin-right: 4px;
+}
+
+
+.taskbar ul li#notif {
+    margin-left: auto;
+    justify-content: right;
+    align-items: center;
+    align-self: center;
+
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.taskbar ul li#notif {
+    border: var(--window-border) var(--window-border-size) inset;
+    padding-left: 4px;
+    padding-right: 4px;
+    line-height: 18px;
+}

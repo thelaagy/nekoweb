@@ -1,0 +1,89 @@
+{
+    "Categories": [
+        {
+            "name": "Social Media",
+            "items":[
+                {
+                    "name": "Bluesky",
+                    "url": "https://bsky.app/profile/laggy.com.br"
+                },
+                {
+                    "name": "Anime tumblr blog",
+                    "url": "https://cardcaptorlaggy.tumblr.com/"
+                },
+                {
+                    "name": "Tumblr",
+                    "url": "https://haibanelaggy.tumblr.com/"
+                },
+                {
+                    "name": "AniList",
+                    "url": "https://anilist.co/user/Laagy/"
+                }
+            ]
+        },
+        {
+            "name": "Music",
+            "items":[
+                {
+                    "name": "Bandcamp",
+                    "url": "https://thelaagy.bandcamp.com/"
+                },
+                {
+                    "name": "Soundcloud",
+                    "url": "https://soundcloud.com/laagy"
+                },
+                {
+                    "name": "Youtube",
+                    "url": "https://youtube.com/@Laagy"
+                }
+            ]
+        },
+        {
+            "name": "Games",
+            "items":[
+                {
+                    "name": "Itch.io",
+                    "url": "https://thelaggy.itch.io/"
+                },
+                {
+                    "name": "Backloggd",
+                    "url": "https://backloggd.com/u/Laggy/"
+                }
+            ]
+        },
+        {
+            "name": "Donations",
+            "items":[
+                {
+                    "name": "Bandcamp",
+                    "url" : "https://thelaagy.bandcamp.com/"
+                },
+                {
+                    "name": "Itch.io",
+                    "url" : "https://thelaggy.itch.io/"
+                },
+                {
+                    "name": "Ko-fi",
+                    "url" : "https://ko-fi.com/laagy"
+                }
+            ]
+        },
+        {
+            "name": "",
+            "style": {"listStyle": "none"},
+            "items":[
+                {
+                    "name": "Hosted on nekoweb",
+                    "url": "https://nekoweb.org"
+                },
+                {
+                    "name": "Follow on nekoweb"
+                },
+                {
+                    "name": "Contact me!",
+                    "url": "mailto:contact@laggy.com.br"
+                }
+            ]
+        }
+    ]
+}

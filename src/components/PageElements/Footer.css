@@ -1,0 +1,44 @@
+footer {
+    background: var(--gb-color4);
+    color: var(--gb-color1);
+    position: relative;
+    border-top: var(--gb-color3) dotted;
+    padding: 30px;
+    position: relative;
+    clear: both;
+    margin-bottom: 0px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    list-style-type: square;
+    margin: 10px;
+}
+
+footer ul li {
+    align-self: normal;
+}
+
+footer ul li a {
+    color: var(--gb-color3);
+    align-content: flex-end;
+    margin: 4px;
+}
+
+footer ul li a svg path {
+    stroke: var(--gb-color3);
+    fill: var(--gb-color3);
+}
+
+@media screen and (max-width: 800px) {
+    footer{
+        flex-direction: column;
+    }
+}

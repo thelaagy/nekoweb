@@ -1,0 +1,104 @@
+
+
+.window {
+    width: 80%;
+    height: 80%;
+    max-width: 1280px;
+    max-height: 960px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 2px;
+
+    position: fixed;
+
+    background: var(--window-background);
+
+    border: var(--window-border-size) var(--window-border) outset;
+
+
+    font-family: sans-serif;
+
+    box-shadow: var(--window-border-size) 0px black,
+        0px var(--window-border-size) black,
+        var(--window-border-size) var(--window-border-size) black,
+        0px 0px 10px 10px #0000004F;
+}
+
+.window .container {
+    background-color: var(--gb-color1);
+    color: var(--window-text);
+    height: calc(100% - 17px);
+    max-height: inherit;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    scrollbar-width: auto;
+    scrollbar-color: var(--gb-color3) var(--gb-color2);
+}
+
+/* +=================================== Responsiviness ===================================+ */
+
+@media screen and (max-width: 800px) {
+    .window {
+        width: calc(100%);
+        max-height: none;
+        margin-top: 0;
+        height: calc(100% - 24px);
+        max-width: none;
+    }
+
+    .window .container section {
+        flex-direction: column;
+    }
+
+    .window .container main {
+        margin-top: 60px;
+    }
+
+    .window .container img {
+        max-width: none;
+        width: 100%;
+    }
+
+    .window .titlebar>.buttons button #max {
+        display: inline;
+    }
+
+    .window .titlebar>.buttons button #min {
+        display: none;
+    }
+
+    .window .container header {
+        width: 100%;
+        position: absolute;
+        margin: 0;
+
+    }
+
+    .window .container header ul {
+        flex-direction: row;
+        border-radius: 0;
+        border: none;
+        border-bottom: var(--gb-color3) dotted 2px;
+    }
+
+    .taskbar ul li a.winbtn {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .window #stickbutton ul {
+        flex-direction: row !important;
+        overflow-x: scroll;
+    }
+
+    .window #stickbutton div {
+        max-width: none;
+    }
+}
