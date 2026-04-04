@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-    test:
+    build:
         runs-on: ubuntu-latest
         name: deploy2nekoweb
         steps:
@@ -12,13 +12,16 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@v4
               with:
-                  node-version: "24"
+                  node-version: "24.x"
 
             - name: Install dependencies
-              run: npm install
+              run: npm install --if-present
 
             - name: Build app
               run: npm run build
+
+            - run: npm install -g serve
+            - run: serve -s build
 
             - name: deploy2nekoweb
               uses: indiefellas/deploy2nekoweb@main
