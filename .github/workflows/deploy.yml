@@ -28,4 +28,4 @@ jobs:
                   nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
                   nekoweb-domain: "laggy.com.br"
                   nekoweb-username: "laggy"
-                  directory: "public"
+                  directory: "build"
