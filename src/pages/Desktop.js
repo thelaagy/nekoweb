@@ -10,6 +10,8 @@ import Footer from "../components/PageElements/Footer.js";
 import Galery from "../components/PageElements/Galery.js";
 import Navbar from "../components/PageElements/Navbar.js";
 
+const url = "/nekoweb";
+
 export default function Desktop() {
     document.body.classList.add("desktop-bg");
     return (
@@ -24,9 +26,9 @@ export default function Desktop() {
             </Window>
             <Taskbar>
                 <TaskBeginButton />
-                <WinButton href="/">Home page</WinButton>
-                <WinButton href="/about">About</WinButton>
-                <WinButton href="/music">Music</WinButton>
+                <WinButton href={url + "/"}>Home page</WinButton>
+                <WinButton href={url + "/about"}>About</WinButton>
+                <WinButton href={url + "/music"}>Music</WinButton>
                 <TaskNotif />
             </Taskbar>
         </div>

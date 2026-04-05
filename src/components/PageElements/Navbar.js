@@ -8,6 +8,8 @@ function Item({ href, children }) {
     );
 }
 
+const url = "/nekoweb";
+
 export default function Navbar() {
     return (
         <nav>
@@ -15,9 +17,9 @@ export default function Navbar() {
                 <li style={{ flexGrow: 8, fontFamily: "cursive" }}>
                     <h3>Laggy's website</h3>
                 </li>
-                <Item href={"/"}>Home</Item>
-                <Item href={"/about"}>About</Item>
-                <Item href={"/music"}>Music</Item>
+                <Item href={url + "/"}>Home</Item>
+                <Item href={url + "/about"}>About</Item>
+                <Item href={url + "/music"}>Music</Item>
             </ul>
         </nav>
     );
