@@ -20,8 +20,6 @@ jobs:
             - name: Build app
               run: npm run build
 
-            - run: npm install -g serve
-
             - name: deploy2nekoweb
               uses: indiefellas/deploy2nekoweb@main
               with:
