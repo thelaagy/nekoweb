@@ -41,7 +41,7 @@ export default function About() {
                 >
                     <img
                         style={{ width: "auto" }}
-                        src={process.env.PUBLIC_URL + "/button.png"}
+                        src={process.env.PUBLIC_URL + "/button.png?"}
                         width="88"
                         height="31"
                         alt="Laggy Website"
@@ -52,7 +52,7 @@ export default function About() {
                 <textarea
                     style={{ width: "300px" }}
                     value={
-                        "<a href='https://laggy.com.br/'><img src='https://laggy.com.br/button.png' width='88' height='31' alt='Laggy Website'/></a>"
+                        "<a href='https://laggy.com.br/'><img src='https://laggy.com.br/button.png?' width='88' height='31' alt='Laggy Website'/></a>"
                     }
                 />
             </p>
