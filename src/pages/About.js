@@ -1,4 +1,4 @@
-import SiteButton from "../assets/images/button.png";
+//import SiteButton from "../assets/images/button.png";
 
 import Rakka from "../assets/images/rakka2.gif";
 
@@ -41,7 +41,7 @@ export default function About() {
                 >
                     <img
                         style={{ width: "auto" }}
-                        src={SiteButton}
+                        src={`${process.env.PUBLIC_URL}/button.png`}
                         width="88"
                         height="31"
                         alt="Laggy Website"
