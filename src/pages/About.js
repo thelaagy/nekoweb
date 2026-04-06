@@ -41,7 +41,7 @@ export default function About() {
                 >
                     <img
                         style={{ width: "auto" }}
-                        src={`${process.env.PUBLIC_URL}/button.png`}
+                        src={process.env.PUBLIC_URL + "/button.png?v=2"}
                         width="88"
                         height="31"
                         alt="Laggy Website"
