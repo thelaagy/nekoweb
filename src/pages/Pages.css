@@ -6,7 +6,7 @@ body{
 }
 
 .desktop-bg{
-    background: var(--window-title-text);
+    background: var(--gb-color3);
 }
 
 .starting{
