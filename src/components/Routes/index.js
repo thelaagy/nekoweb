@@ -1,9 +1,9 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 // Pages
-import Music from "./pages/Music.js";
-import Home from "./pages/Home.js";
-import About from "./pages/About.js";
+import Music from "../../pages/Music.js";
+import Home from "../../pages/Home.js";
+import About from "../../pages/About.js";
 
 export default function AppRouter() {
     return (

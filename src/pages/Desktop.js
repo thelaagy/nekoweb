@@ -1,4 +1,4 @@
-import Routes from "../routes.js";
+import Routes from "../components/Routes/index.js";
 import {
     Taskbar,
     TaskBeginButton,
@@ -6,9 +6,9 @@ import {
     TaskNotif,
 } from "../components/Taskbar/Taskbar.js";
 import Window from "../components/Window/Window.js";
-import Footer from "../components/PageElements/Footer.js";
-import Galery from "../components/PageElements/Galery.js";
-import Navbar from "../components/PageElements/Navbar.js";
+import Footer from "../components/PageElements/Footer/Footer.js";
+import Galery from "../components/PageElements/Galery/Galery.js";
+import Navbar from "../components/PageElements/Navbar/Navbar.js";
 
 export default function Desktop() {
     document.body.classList.add("desktop-bg");
