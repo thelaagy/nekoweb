@@ -28,7 +28,6 @@ body{
     color: var(--window-text);
     height: calc(100% - 17px);
     max-height: inherit;
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
 

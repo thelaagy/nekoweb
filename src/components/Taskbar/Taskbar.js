@@ -4,7 +4,7 @@ import Icons from "../../assets/images/icons.js";
 function TaskButton({ icon = Icons.file, href = "", style, children }) {
     return (
         <li>
-            <a href={href} style={style}>
+            <a href={"#" + href} style={style}>
                 <img src={icon} alt="" />
                 {children}
             </a>
